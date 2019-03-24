@@ -48,12 +48,15 @@ Widget FormUI(){
     children: <Widget>[
       new TextFormField(
         decoration: new InputDecoration(hintText: 'Username'),
+        keyboardType: TextInputType.text,
       ),
       new TextFormField(
         decoration: new InputDecoration(hintText: 'Email address'),
+        keyboardType: TextInputType.emailAddress,
       ),
       new TextFormField(
         decoration: new InputDecoration(hintText: 'Phone number'),
+        keyboardType: TextInputType.phone,
       ),
       new RaisedButton(
         onPressed: _sendToServer,
